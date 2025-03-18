@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #37BAED;
+  transition: opacity 0.3s ease-in-out;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navbar-container {
+  width: 95%;
+  max-width: 2200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.navbar-text {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 40px;
+  white-space: nowrap;
+  text-align: right;
+}
